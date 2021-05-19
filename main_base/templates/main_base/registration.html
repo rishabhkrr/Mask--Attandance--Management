@@ -1,0 +1,57 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static '/css/registration.css' %}">
+</head>
+<body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form action="" method="POST">
+          {% csrf_token %}
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Email</span>
+              {{form1.email}}
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              {{form1.username}}
+            </div>
+            <div class="input-box">
+              <span class="details">Department</span>
+              {{form2.department}}
+            </div>
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              {{form2.date_of_birth}}
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              {{form1.password1}}
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              {{form1.password2}}
+            </div>
+            <div class="input-box">
+              <span class="details">Gender</span>
+              {{form2.gender}}
+            </div>
+          </div>
+    
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+  
+  </body>
+  </html>
+  

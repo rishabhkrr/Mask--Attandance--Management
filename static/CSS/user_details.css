@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.table{
+    width:700px;
+    background: #fff;
+    max-height: 470px;
+    overflow-y: auto;
+    box-shadow: 0 10px 50px 0px rgba(0,0,0,0.5);
+}
+
+.table{
+    width: 70%;
+    
+    border-collapse: collapse;
+
+}
+
+table thead th,
+table tbody td{
+    padding: 15px;
+    border:none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+table thead th{
+    background: #454ac4;
+    color: #fff;
+
+}
